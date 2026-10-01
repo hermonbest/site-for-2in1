@@ -1,0 +1,236 @@
+/* ==========================================================================
+   2 in one photography: brand graphics
+   Idea: the "2:1" motif. Two slanted bars, one twice as wide as the other.
+   Used as dividers, section titles, frames and outlined background marks.
+
+   HOW TO USE
+   1. Save as brand-graphics.css next to your main CSS.
+   2. Add in <head>, AFTER your existing stylesheet:
+        <link rel="stylesheet" href="brand-graphics.css">
+   3. Change the 3 colors below to match your site's gold / dark / light.
+   4. Add the classes shown in the "HTML" comments to your sections.
+   ========================================================================== */
+
+:root {
+  --g-gold:  var(--accent-base, #C8AF8A);   /* main accent: site's gold */
+  --g-ink:   var(--bg-deep, #090A0D);       /* dark panel color */
+  --g-ivory: var(--text-primary, #F2F3F5);  /* light text / light panel */
+  --g-slant: 4vw;                           /* how steep the diagonals are */
+  --g-skew:  -18deg;                        /* angle of the 2:1 bars */
+}
+@media (max-width: 700px) { :root { --g-slant: 7vw; } }
+
+
+/* --------------------------------------------------------------------------
+   1. DIAGONAL SECTION DIVIDERS
+   Replaces flat straight edges between sections. Each section is cut at an
+   angle and overlaps the one above so the edges lock together.
+
+   HTML:
+     <section id="craft"    class="slant bg-ink">...</section>
+     <section id="cinema"   class="slant bg-gold">...</section>
+     <section id="portfolio" class="slant bg-ink">...</section>
+   -------------------------------------------------------------------------- */
+.slant {
+  position: relative;
+  clip-path: polygon(0 0, 100% var(--g-slant), 100% 100%, 0 calc(100% - var(--g-slant)));
+  margin-top: calc(var(--g-slant) * -1);
+  padding-block: calc(var(--g-slant) + 3rem);
+}
+.slant:first-of-type { margin-top: 0; }
+
+/* background helpers */
+.bg-ink   { background: var(--g-ink);   color: var(--g-ivory); }
+.bg-gold  { background: var(--g-gold);  color: var(--g-ink); }
+.bg-ivory { background: var(--g-ivory); color: var(--g-ink); }
+
+
+/* --------------------------------------------------------------------------
+   2. SECTION TITLE with the 2:1 bars
+   One bold word + one light word, with two slanted bars beside it.
+
+   HTML:
+     <h2 class="section-title"><b>Selected</b> Work</h2>
+   -------------------------------------------------------------------------- */
+.section-title {
+  position: relative;
+  display: inline-block;
+  padding-left: 3.4rem;
+  font-family: var(--font-serif, 'Cormorant Garamond', Georgia, serif);
+  font-weight: 400;
+  font-size: clamp(2rem, 3.8vw, 3.2rem);
+  line-height: 1.15;
+}
+.section-title b { font-weight: 700; }
+
+/* wide bar */
+.section-title::before,
+.section-title::after {
+  content: "";
+  position: absolute;
+  top: 0.12em;
+  bottom: 0.12em;
+  transform: skewX(var(--g-skew));
+  background: var(--g-gold);
+}
+.section-title::before { left: 0;       width: 1.6rem; }   /* the "2" */
+.section-title::after  { left: 1.9rem;  width: 0.8rem; }   /* the "1" */
+.bg-gold .section-title::before,
+.bg-gold .section-title::after { background: var(--g-ink); }
+
+@media (max-width: 600px) {
+  .section-title { padding-left: 2.6rem; }
+  .section-title::before { width: 1.2rem; }
+  .section-title::after  { left: 1.45rem; width: 0.6rem; }
+}
+
+
+/* --------------------------------------------------------------------------
+   3. OUTLINED BACKGROUND MARK (like the outlined pattern in the reference)
+   Big thin-outline text behind a heading. Change the text in data-mark.
+
+   HTML:
+     <section class="slant bg-ink has-mark" data-mark="2:1 2:1 2:1 2:1">
+   -------------------------------------------------------------------------- */
+.has-mark { overflow: hidden; position: relative; }
+.has-mark::before {
+  content: attr(data-mark);
+  position: absolute;
+  top: calc(var(--g-slant) + 1rem);
+  right: -2%;
+  max-width: 100%;
+  white-space: nowrap;
+  font-size: clamp(4rem, 14vw, 11rem);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--g-gold);
+  opacity: 0.16;
+  pointer-events: none;
+  z-index: 0;
+}
+.bg-gold.has-mark::before { -webkit-text-stroke-color: var(--g-ink); opacity: 0.16; }
+.has-mark > * { position: relative; z-index: 1; }   /* keep content above the mark */
+
+
+/* --------------------------------------------------------------------------
+   4. SLANTED BAR PATTERN (fills empty space, backs up photos)
+
+   HTML:
+     <div class="bars" aria-hidden="true"></div>
+   -------------------------------------------------------------------------- */
+.bars {
+  height: 5rem;
+  background: repeating-linear-gradient(
+    115deg,
+    var(--g-gold) 0 14px,
+    transparent 14px 38px
+  );
+  opacity: 0.8;
+}
+
+
+/* --------------------------------------------------------------------------
+   5. COLOR-BLOCK HERO PANEL
+   A slanted gold panel on one side with the text on it, like the
+   "Company Overview" slide.
+
+   HTML:
+     <div class="split">
+       <div class="split__media"><img src="..." alt="..."></div>
+       <div class="split__panel">
+         <h1 class="section-title"><b>Luxury</b> Photography</h1>
+         <p>Weddings, Melse and studio portraits.</p>
+       </div>
+     </div>
+   -------------------------------------------------------------------------- */
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 70vh;
+  background: var(--g-ink);
+}
+.split__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.split__panel {
+  background: var(--g-gold);
+  color: var(--g-ink);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3rem 3rem 3rem 22%;
+  margin-left: -12%;
+  clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%);
+}
+.split__panel .section-title::before,
+.split__panel .section-title::after { background: var(--g-ink); }
+
+@media (max-width: 800px) {
+  .split { grid-template-columns: 1fr; }
+  .split__panel {
+    margin-left: 0;
+    padding: 3rem 1.5rem;
+    clip-path: polygon(0 var(--g-slant), 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   6. PHOTO FRAME
+   A solid gold block offset behind a photo, with a cut corner.
+   Works on portfolio cards or any <img>.
+
+   HTML:
+     <figure class="photo-frame"><img src="..." alt="..."></figure>
+   -------------------------------------------------------------------------- */
+.photo-frame {
+  position: relative;
+  margin: 0 0 1.5rem 1.5rem;
+}
+.photo-frame::before {
+  content: "";
+  position: absolute;
+  inset: 1.5rem 1.5rem -1.5rem -1.5rem;
+  background: var(--g-gold);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%, 0 88%);
+  z-index: 0;
+}
+.photo-frame img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%, 0 88%);
+}
+
+
+/* --------------------------------------------------------------------------
+   7. FEATURE CARDS ("2:1 Artistry" section)
+   Gives each card a slanted gold edge instead of a plain box.
+
+   HTML:
+     <article class="feature"> ...existing card content... </article>
+   -------------------------------------------------------------------------- */
+.feature {
+  position: relative;
+  padding: 1.75rem 1.5rem 1.75rem 2.25rem;
+  background: rgba(245, 241, 232, 0.05);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.feature::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 0.9rem;
+  background: var(--g-gold);
+  transform: skewX(var(--g-skew));
+  transform-origin: top left;
+}
+.bg-gold .feature { background: rgba(15, 22, 29, 0.08); }
+.bg-gold .feature::before { background: var(--g-ink); }

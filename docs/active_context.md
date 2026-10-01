@@ -124,14 +124,25 @@ The authentic studio video reel `assets/igexport-DbGQLUbOJmx.mp4` has been integ
    - Added companion editorial column detailing 4K Color Grading, Live Ambient & Kebero Audio, and Multi-Format Delivery (9:16 vertical & 16:9 widescreen).
    - Direct CTAs for "Book Cinema Package" and WhatsApp Director consultation.
 
+## Hero Slideshow & Pre-Wedding Typography Refinement
+1. **Hero Background Showcase Updates**:
+   - Integrated the user's authentic Gheralta mountain wedding ceremony editorial (`assets/portfolio/hero/gheralta-wedding-cover.webp` / `assets/793347770_18110221337141462_8364176549147131375_n.jpg`) as the primary main cover slide of the website.
+   - Removed `assets/portfolio/coastal-romance/photo-1.webp` and `assets/portfolio/wedding-equestrian/photo-1.jpg` from the hero slideshow.
+   - Hero background showcase features 4 authentic slides: Gheralta Mountain Wedding, Pre-Wedding Romance, Royal Habesha Bride, Traditional Melse.
+   - Updated OpenGraph and Schema.org metadata to feature the Gheralta wedding cover as the social share card image.
+2. **Pre-Wedding Card Cover & Typography**:
+   - Replaced card cover image with `assets/portfolio/coastal-romance/photo-2.webp`.
+   - Updated pre-wedding dataset to 7 authentic coastal photos starting with `photo-2.webp`.
+   - Enhanced pre-wedding cover typography with Google Fonts `Playfair Display` (italic serif) and `Italiana` for an editorial magazine aesthetic.
+
 ## File Manifest
-- [index.html](file:///c:/docs/site%20for%202in1/index.html): Semantic HTML5 markup, Schema.org LocalBusiness JSON-LD, hero slides, authentic commission cards with data-images datasets, cinema reel player with multi-tier source cascade, enhanced lightbox modal.
-- [css/styles.css](file:///c:/docs/site%20for%202in1/css/styles.css): Quiet-luxury design system, hero cross-fade styles, in-card carousel arrows, cinema reel styling with glassmorphism controls, lightbox header and thumbnail strip.
-- [js/app.js](file:///c:/docs/site%20for%202in1/js/app.js): Header scroll-spy, hero slideshow timer, cinema player controller with IntersectionObserver, in-card carousel cycling, multi-category filtering, set-based lightbox modal.
+- [index.html](file:///c:/docs/site%20for%202in1/index.html): Semantic HTML5 markup, Schema.org LocalBusiness JSON-LD, Gheralta main cover slide and og:image, pre-wedding cover updates.
+- [css/styles.css](file:///c:/docs/site%20for%202in1/css/styles.css): Quiet-luxury design system, Playfair Display and Italiana font imports, pre-wedding custom typography classes.
+- [js/app.js](file:///c:/docs/site%20for%202in1/js/app.js): Header scroll-spy, hero slideshow timer, cinema player controller, in-card carousel cycling, lightbox modal.
 - [docs/active_context.md](file:///c:/docs/site%20for%202in1/docs/active_context.md): Ongoing architectural tracking and implementation records.
 
 ## Status
 - Verified across mobile (320px, 375px, 390px, 487px), tablet (768px, 1024px), and desktop viewports.
-- 100% authentic photography and video cinema reel from 2 In 1 Studio. Zero em-dashes and zero broken links.
+- Zero broken images, zero em-dashes, and seamless responsive behavior.
 
 
