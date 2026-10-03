@@ -144,14 +144,38 @@ The authentic studio video reel `assets/igexport-DbGQLUbOJmx.mp4` has been integ
    - Added tailored object-position CSS classes (`.hero-bg-coastal-day` at `center 36%` and `.hero-bg-coastal-sunset` at `center 42%`) for optimal framing across desktop and mobile viewports.
    - Updated OpenGraph and Schema.org metadata cover image to `assets/portfolio/coastal-romance/photo-2.jpg`.
 
+## Typography Overhaul (Josefin Sans & Montserrat)
+1. **Google Fonts Integration**:
+   - Loaded `Josefin Sans` (weights 400, 600) and `Montserrat` (weights 400, 600) via preconnected `<link>` tags in `<head>` of `index.html` with `display=swap`.
+   - Completely removed old fonts (`Cormorant Garamond`, `Italiana`, `Playfair Display`, `Plus Jakarta Sans`) and removed `@import` from `css/styles.css`.
+   - Defined semantic CSS variables in `:root`:
+     * `--font-eyebrow: 'Josefin Sans', Arial, sans-serif;`
+     * `--font-title: 'Montserrat', Arial, sans-serif;`
+     * `--font-body: 'Montserrat', Arial, sans-serif;`
+
+2. **Font Mapping**:
+   - **Small Header Lines (Eyebrows)**:
+     * `.section-eyebrow`, `.hero-eyebrow-pill`, `.cinema-meta-tag`, `.gallery-tag`, `.pre-wedding-overlay .pre-wedding-tag`, `.studio-city`, `.lightbox-set-tag`:
+     * `font-family: var(--font-eyebrow); font-size: 0.85rem; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 400;`
+   - **Main Titles & Headings**:
+     * `h1`-`h6`, `.hero-title`, `.section-title`, `.gallery-title`, `.cinema-feature-title`, `.studio-name`, `.craft-card h3`, `.lightbox-set-title`, `.feedback-card h3`:
+     * `font-family: var(--font-title); font-weight: 400; line-height: 1.15;`
+     * Hero title size calibrated to `clamp(2rem, 7vw, 3.4rem)` with smaller headings scaled proportionally.
+   - **Body Text, Descriptions & Navigation**:
+     * `body`, `html`, `p`, `.hero-desc`, `.section-subtitle`, `.cinema-description`, `.craft-card p`, `.gallery-meta`, `.testimonial-quote`, `.nav-link`:
+     * `font-family: var(--font-body); font-weight: 400; line-height: 1.7;`
+   - **Buttons**:
+     * `.btn-primary`, `.btn-secondary`, `.btn-text`, `.filter-btn`, `.channel-btn`:
+     * `font-family: var(--font-body); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.12em; line-height: 1.7;`
+
 ## File Manifest
-- [index.html](file:///c:/docs/client/site%20for%202in1/index.html): Semantic HTML5 markup, hero background slides with photo-2.webp and photo-8.webp, updated 5-slide indicator deck, OpenGraph metadata.
-- [css/styles.css](file:///c:/docs/client/site%20for%202in1/css/styles.css): Hero slide image framing classes (.hero-bg-coastal-day, .hero-bg-coastal-sunset).
-- [js/app.js](file:///c:/docs/client/site%20for%202in1/js/app.js): Dynamic hero slideshow controller, lightbox, cinema reel player.
+- [index.html](file:///c:/docs/client/site%20for%202in1/index.html): Preconnected Google Fonts `<link>` with Josefin Sans and Montserrat (`display=swap`).
+- [css/styles.css](file:///c:/docs/client/site%20for%202in1/css/styles.css): Removed old `@import`, defined `--font-eyebrow`, `--font-title`, `--font-body`, and updated all eyebrow, title, body, and button typography.
+- [brand-graphics.css](file:///c:/docs/client/site%20for%202in1/brand-graphics.css): Updated section-title font-family to `var(--font-title)`.
 - [docs/active_context.md](file:///c:/docs/client/site%20for%202in1/docs/active_context.md): Ongoing architectural tracking and implementation records.
 
 ## Status
-- Verified across mobile, tablet, and desktop viewports.
-- Zero broken images, zero em-dashes, and seamless responsive behavior.
+- Verified across mobile (iPhone Safari) and desktop viewports.
+- Zero broken images, zero em-dashes, and clean CSS cascading.
 
 

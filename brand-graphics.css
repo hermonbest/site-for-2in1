@@ -56,12 +56,12 @@
   position: relative;
   display: inline-block;
   padding-left: 3.4rem;
-  font-family: var(--font-serif, 'Cormorant Garamond', Georgia, serif);
+  font-family: var(--font-title, 'Montserrat', Arial, sans-serif);
   font-weight: 400;
-  font-size: clamp(2rem, 3.8vw, 3.2rem);
+  font-size: clamp(1.8rem, 4.2vw, 2.6rem);
   line-height: 1.15;
 }
-.section-title b { font-weight: 700; }
+.section-title b { font-weight: 600; }
 
 /* wide bar */
 .section-title::before,
