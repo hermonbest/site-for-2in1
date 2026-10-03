@@ -525,6 +525,14 @@ button {
   filter: brightness(0.68) contrast(1.05);
 }
 
+.hero-bg-coastal-day {
+  object-position: center 36%;
+}
+
+.hero-bg-coastal-sunset {
+  object-position: center 42%;
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;

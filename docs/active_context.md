@@ -135,14 +135,23 @@ The authentic studio video reel `assets/igexport-DbGQLUbOJmx.mp4` has been integ
    - Updated pre-wedding dataset to 7 authentic coastal photos starting with `photo-2.webp`.
    - Enhanced pre-wedding cover typography with Google Fonts `Playfair Display` (italic serif) and `Italiana` for an editorial magazine aesthetic.
 
+## Main Cover Page Coastal Romance Update
+1. **Hero Main Cover Slide Showcase**:
+   - Elevated `assets/portfolio/coastal-romance/photo-2.webp` to Slide 1 (active initial cover on page load).
+   - Added `assets/portfolio/coastal-romance/photo-8.webp` to Slide 2 as the sunset golden hour companion cover.
+   - Preserved subsequent showcase slides: Gheralta Mountain Wedding, Royal Habesha Bride, and Traditional Habesha Melse.
+   - Updated hero indicators to 5 responsive indicator bars with matching aria-labels.
+   - Added tailored object-position CSS classes (`.hero-bg-coastal-day` at `center 36%` and `.hero-bg-coastal-sunset` at `center 42%`) for optimal framing across desktop and mobile viewports.
+   - Updated OpenGraph and Schema.org metadata cover image to `assets/portfolio/coastal-romance/photo-2.jpg`.
+
 ## File Manifest
-- [index.html](file:///c:/docs/site%20for%202in1/index.html): Semantic HTML5 markup, Schema.org LocalBusiness JSON-LD, Gheralta main cover slide and og:image, pre-wedding cover updates.
-- [css/styles.css](file:///c:/docs/site%20for%202in1/css/styles.css): Quiet-luxury design system, Playfair Display and Italiana font imports, pre-wedding custom typography classes.
-- [js/app.js](file:///c:/docs/site%20for%202in1/js/app.js): Header scroll-spy, hero slideshow timer, cinema player controller, in-card carousel cycling, lightbox modal.
-- [docs/active_context.md](file:///c:/docs/site%20for%202in1/docs/active_context.md): Ongoing architectural tracking and implementation records.
+- [index.html](file:///c:/docs/client/site%20for%202in1/index.html): Semantic HTML5 markup, hero background slides with photo-2.webp and photo-8.webp, updated 5-slide indicator deck, OpenGraph metadata.
+- [css/styles.css](file:///c:/docs/client/site%20for%202in1/css/styles.css): Hero slide image framing classes (.hero-bg-coastal-day, .hero-bg-coastal-sunset).
+- [js/app.js](file:///c:/docs/client/site%20for%202in1/js/app.js): Dynamic hero slideshow controller, lightbox, cinema reel player.
+- [docs/active_context.md](file:///c:/docs/client/site%20for%202in1/docs/active_context.md): Ongoing architectural tracking and implementation records.
 
 ## Status
-- Verified across mobile (320px, 375px, 390px, 487px), tablet (768px, 1024px), and desktop viewports.
+- Verified across mobile, tablet, and desktop viewports.
 - Zero broken images, zero em-dashes, and seamless responsive behavior.
 
 
