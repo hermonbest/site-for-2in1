@@ -168,9 +168,13 @@ The authentic studio video reel `assets/igexport-DbGQLUbOJmx.mp4` has been integ
      * `.btn-primary`, `.btn-secondary`, `.btn-text`, `.filter-btn`, `.channel-btn`:
      * `font-family: var(--font-body); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.12em; line-height: 1.7;`
 
+   - **Luxury Accent Line ("Luxury Photography & Cinema.")**:
+     * `.hero-title .accent-line`:
+     * `font-family: var(--font-accent);` (`Cormorant Garamond`, italic serif, weight 400, `1.08em`, letter-spacing `0.02em`) for a quiet, calm, high-fashion editorial presence.
+
 ## File Manifest
-- [index.html](file:///c:/docs/client/site%20for%202in1/index.html): Preconnected Google Fonts `<link>` with Josefin Sans and Montserrat (`display=swap`).
-- [css/styles.css](file:///c:/docs/client/site%20for%202in1/css/styles.css): Removed old `@import`, defined `--font-eyebrow`, `--font-title`, `--font-body`, and updated all eyebrow, title, body, and button typography.
+- [index.html](file:///c:/docs/client/site%20for%202in1/index.html): Preconnected Google Fonts `<link>` (Josefin Sans, Montserrat, Cormorant Garamond italic), stylesheet cache-buster v=3.
+- [css/styles.css](file:///c:/docs/client/site%20for%202in1/css/styles.css): Defined `--font-accent`, updated `.hero-title .accent-line` to calm editorial italic serif.
 - [brand-graphics.css](file:///c:/docs/client/site%20for%202in1/brand-graphics.css): Updated section-title font-family to `var(--font-title)`.
 - [docs/active_context.md](file:///c:/docs/client/site%20for%202in1/docs/active_context.md): Ongoing architectural tracking and implementation records.
 
