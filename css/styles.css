@@ -34,7 +34,7 @@
   --font-eyebrow: 'Josefin Sans', Arial, sans-serif;
   --font-title: 'Montserrat', Arial, sans-serif;
   --font-body: 'Montserrat', Arial, sans-serif;
-  --font-accent: 'Cormorant Garamond', Garamond, Georgia, serif;
+  --font-accent: "Lora", serif;
 
   /* Legacy aliases for backwards compatibility */
   --font-serif: var(--font-title);
@@ -678,13 +678,15 @@ button {
   margin-bottom: 22px;
 }
 
-.hero-title .accent-line {
-  font-family: var(--font-accent);
+.hero-title .accent-line,
+.lora-accent {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
   font-style: italic;
   font-weight: 400;
-  font-size: 1.08em;
+  font-size: 1.05em;
   color: var(--accent-base);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   display: block;
 }
 
