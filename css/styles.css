@@ -34,7 +34,7 @@
   --font-eyebrow: 'Josefin Sans', Arial, sans-serif;
   --font-title: 'Montserrat', Arial, sans-serif;
   --font-body: 'Montserrat', Arial, sans-serif;
-  --font-accent: "Lora", serif;
+  --font-accent: "Clarity City", sans-serif;
 
   /* Legacy aliases for backwards compatibility */
   --font-serif: var(--font-title);
@@ -679,14 +679,12 @@ button {
 }
 
 .hero-title .accent-line,
-.lora-accent {
-  font-family: "Lora", serif;
+.clarity-city-accent {
+  font-family: "Clarity City", sans-serif;
   font-optical-sizing: auto;
-  font-style: italic;
   font-weight: 400;
-  font-size: 1.05em;
+  font-style: normal;
   color: var(--accent-base);
-  letter-spacing: 0.01em;
   display: block;
 }
 
