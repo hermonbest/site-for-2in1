@@ -181,6 +181,6 @@ The authentic studio video reel `assets/igexport-DbGQLUbOJmx.mp4` has been integ
 ## Status
 - Verified across mobile (iPhone Safari) and desktop viewports.
 - Zero broken images, zero em-dashes, and clean CSS cascading.
-- Hero cover background slider updated: set `assets/portfolio/hero/gheralta-wedding-cover.png` as the primary first active cover slide, followed by `photo-8.webp` (Coastal sunset romance), Royal Habesha Bride, and Traditional Melse.
+- Hero cover background slider updated: set `assets/portfolio/hero/gheralta-wedding-cover.png` as the primary first active cover slide with custom framing (`.hero-bg-gheralta` with `object-position: 55% 82%` desktop and `54% 80%` mobile) ensuring the bride, groom, and wedding veil remain fully in view without being cut off. Followed by `photo-8.webp` (Coastal sunset romance), Royal Habesha Bride, and Traditional Melse. Bumped stylesheet cache buster to `?v=6`.
 
 

@@ -552,6 +552,10 @@ button {
   filter: brightness(0.68) contrast(1.05);
 }
 
+.hero-bg-gheralta {
+  object-position: 55% 82%;
+}
+
 .hero-bg-coastal-day {
   object-position: center 36%;
 }
@@ -2566,6 +2570,10 @@ textarea.form-control {
   .hero {
     min-height: 88dvh;
     padding-top: calc(var(--header-height) + 12px);
+  }
+
+  .hero-bg-gheralta {
+    object-position: 54% 80%;
   }
 
   .hero-content {
