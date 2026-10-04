@@ -169,12 +169,12 @@ The authentic studio video reel `assets/igexport-DbGQLUbOJmx.mp4` has been integ
      * `font-family: var(--font-body); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.12em; line-height: 1.7;`
 
    - **Luxury Accent Line ("Luxury Photography & Cinema.")**:
-     * `.hero-title .accent-line`, `.lora-accent`:
-     * `font-family: "Lora", serif; font-optical-sizing: auto; font-style: italic; font-weight: 400; font-size: 1.05em;` for a polished, calm, and contemporary editorial serif presence.
+     * `.hero-title .accent-line`, `.clarity-city-accent`:
+     * `font-family: "Clarity City", sans-serif; font-optical-sizing: auto; font-weight: 400; font-style: normal;`
 
 ## File Manifest
-- [index.html](file:///c:/docs/client/site%20for%202in1/index.html): Preconnected Google Fonts `<link>` (Josefin Sans, Montserrat, Lora:ital,wght@0,400..700;1,400..700), stylesheet cache-buster v=4.
-- [css/styles.css](file:///c:/docs/client/site%20for%202in1/css/styles.css): Defined `--font-accent: "Lora", serif;`, updated `.hero-title .accent-line` and `.lora-accent` with `font-optical-sizing: auto;`.
+- [index.html](file:///c:/docs/client/site%20for%202in1/index.html): Embedded Google Fonts `<link>` with Clarity City (`family=Clarity+City:ital,wght@0,100..900;1,100..900`), stylesheet cache-buster v=5.
+- [css/styles.css](file:///c:/docs/client/site%20for%202in1/css/styles.css): Defined `--font-accent: "Clarity City", sans-serif;`, updated `.hero-title .accent-line` and `.clarity-city-accent` with `font-optical-sizing: auto;`.
 - [brand-graphics.css](file:///c:/docs/client/site%20for%202in1/brand-graphics.css): Updated section-title font-family to `var(--font-title)`.
 - [docs/active_context.md](file:///c:/docs/client/site%20for%202in1/docs/active_context.md): Ongoing architectural tracking and implementation records.
 
