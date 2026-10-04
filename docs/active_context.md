@@ -181,5 +181,6 @@ The authentic studio video reel `assets/igexport-DbGQLUbOJmx.mp4` has been integ
 ## Status
 - Verified across mobile (iPhone Safari) and desktop viewports.
 - Zero broken images, zero em-dashes, and clean CSS cascading.
+- Hero cover background slider updated: removed `photo-2.webp`, keeping `photo-8.webp` (Coastal sunset romance) as the initial active slide alongside Gheralta Mountain Wedding, Royal Habesha Bride, and Traditional Melse.
 
 
