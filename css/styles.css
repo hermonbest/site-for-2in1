@@ -34,7 +34,7 @@
   --font-eyebrow: 'Josefin Sans', Arial, sans-serif;
   --font-title: 'Montserrat', Arial, sans-serif;
   --font-body: 'Montserrat', Arial, sans-serif;
-  --font-accent: "Clarity City", sans-serif;
+  --font-accent: "Italiana", sans-serif;
 
   /* Legacy aliases for backwards compatibility */
   --font-serif: var(--font-title);
@@ -679,13 +679,21 @@ button {
 }
 
 .hero-title .accent-line,
-.clarity-city-accent {
+.italiana-regular {
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1em;
+  color: var(--accent-base);
+  letter-spacing: 0.03em;
+  display: block;
+}
+
+.clarity-city-regular {
   font-family: "Clarity City", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: var(--accent-base);
-  display: block;
 }
 
 .hero-desc {

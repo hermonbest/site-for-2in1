@@ -169,12 +169,12 @@ The authentic studio video reel `assets/igexport-DbGQLUbOJmx.mp4` has been integ
      * `font-family: var(--font-body); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.12em; line-height: 1.7;`
 
    - **Luxury Accent Line ("Luxury Photography & Cinema.")**:
-     * `.hero-title .accent-line`, `.clarity-city-accent`:
-     * `font-family: "Clarity City", sans-serif; font-optical-sizing: auto; font-weight: 400; font-style: normal;`
+     * `.hero-title .accent-line`, `.italiana-regular`:
+     * `font-family: "Italiana", sans-serif; font-weight: 400; font-style: normal;` for an elegant, calm, high-fashion Italian calligraphy-inspired aesthetic.
 
 ## File Manifest
-- [index.html](file:///c:/docs/client/site%20for%202in1/index.html): Embedded Google Fonts `<link>` with Clarity City (`family=Clarity+City:ital,wght@0,100..900;1,100..900`), stylesheet cache-buster v=5.
-- [css/styles.css](file:///c:/docs/client/site%20for%202in1/css/styles.css): Defined `--font-accent: "Clarity City", sans-serif;`, updated `.hero-title .accent-line` and `.clarity-city-accent` with `font-optical-sizing: auto;`.
+- [index.html](file:///c:/docs/client/site%20for%202in1/index.html): Embedded Google Fonts `<link>` with Clarity City & Italiana (`family=Clarity+City:...&family=Italiana&...`), stylesheet cache-buster v=5.
+- [css/styles.css](file:///c:/docs/client/site%20for%202in1/css/styles.css): Defined `--font-accent: "Italiana", sans-serif;`, updated `.hero-title .accent-line` and `.italiana-regular`.
 - [brand-graphics.css](file:///c:/docs/client/site%20for%202in1/brand-graphics.css): Updated section-title font-family to `var(--font-title)`.
 - [docs/active_context.md](file:///c:/docs/client/site%20for%202in1/docs/active_context.md): Ongoing architectural tracking and implementation records.
 
