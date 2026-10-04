@@ -179,8 +179,8 @@ The authentic studio video reel `assets/igexport-DbGQLUbOJmx.mp4` has been integ
 - [docs/active_context.md](file:///c:/docs/client/site%20for%202in1/docs/active_context.md): Ongoing architectural tracking and implementation records.
 
 ## Status
-- Verified across mobile (iPhone Safari) and desktop viewports.
-- Zero broken images, zero em-dashes, and clean CSS cascading.
-- Hero cover background slider updated: set `assets/portfolio/hero/gheralta-wedding-cover.png` as the primary first active cover slide with custom framing (`.hero-bg-gheralta` with `object-position: 55% 82%` desktop and `54% 80%` mobile) ensuring the bride, groom, and wedding veil remain fully in view without being cut off. Followed by `photo-8.webp` (Coastal sunset romance), Royal Habesha Bride, and Traditional Melse. Bumped stylesheet cache buster to `?v=6`.
+- Verified across mobile (iPhone Safari/Chrome 390x844) and desktop (1440x900) headless renders.
+- The Gheralta wedding cover image shows the groom, bride in white gown, veil, and mountain cliff with zero overlap behind action buttons and no clipping.
+- Zero broken images, zero em-dashes, and clean CSS cascading. Bumped stylesheet cache buster to `?v=7`.
 
 

@@ -570,8 +570,8 @@ button {
   background: linear-gradient(
     180deg,
     rgba(9, 10, 13, 0.42) 0%,
-    rgba(9, 10, 13, 0.72) 68%,
-    var(--bg-deep) 100%
+    rgba(9, 10, 13, 0.60) 55%,
+    rgba(9, 10, 13, 0.85) 100%
   );
   z-index: 2;
   pointer-events: none;
@@ -2568,16 +2568,17 @@ textarea.form-control {
 
   /* Hero Section */
   .hero {
-    min-height: 88dvh;
-    padding-top: calc(var(--header-height) + 12px);
+    min-height: 94dvh;
+    padding-top: calc(var(--header-height) + 8px);
+    align-items: flex-start;
   }
 
   .hero-bg-gheralta {
-    object-position: 54% 80%;
+    object-position: 54% 88%;
   }
 
   .hero-content {
-    padding: 36px 0 54px;
+    padding: 24px 0 40px;
   }
 
   .hero-eyebrow {
